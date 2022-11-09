@@ -1,0 +1,65 @@
+.modalContainer {
+    background: #000;
+    box-shadow: rgba(255, 194, 60, 0.3);
+    box-shadow: 1px 1px 25px 7px rgba(255, 194, 60, 0.5);
+      -webkit-box-shadow: 1px 1px 25px 7px rgba(255, 194, 60, 0.5);
+      -moz-box-shadow: 1px 1px 25px 7px rgba(255, 194, 60, 0.5);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 50px 25px;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+input {
+    border: 2px solid #FFC23C;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    padding: 20px 10px;
+    outline: none;
+    line-height: 25%;
+    width: calc(50% - 50px);
+}
+
+textarea {
+    border: 2px solid #FFC23C;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    padding: 20px 10px;
+    outline: none;
+    resize: none;
+    width: calc(100% - 50px);
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+
+

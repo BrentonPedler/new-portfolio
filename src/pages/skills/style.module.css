@@ -1,0 +1,33 @@
+.background {
+  background-image: url("../../assets/keyboard2.png");
+  background-size: cover;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+p {
+  line-height: 30px;
+}
+
+.skillContent {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 25px 7px rgba(255, 194, 60, 0.5);
+      -webkit-box-shadow: 1px 1px 25px 7px rgba(255, 194, 60, 0.5);
+      -moz-box-shadow: 1px 1px 25px 7px rgba(255, 194, 60, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+}

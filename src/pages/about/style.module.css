@@ -1,0 +1,21 @@
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+img {
+    min-width: 300px;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}

@@ -1,0 +1,25 @@
+h2 {
+    font-size: 40px;
+}
+
+.main {
+    background-image: url('../../assets/red-neon.png');
+}
+
+.contentContainer {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    height: fit-content;
+    padding: 50px 25px;
+}
+
+.img {
+    width: 300px;
+    object-fit: contain;
+    margin: 10px 0px;
+    height: 200px;
+}
+
+a {
+    padding: 25px 25px 0 0;
+}

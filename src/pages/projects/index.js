@@ -7,9 +7,9 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 import style from './style.module.css'
 
 export default function Projects() {
-    const renderProjects = projectList.map((data) => {
+    const renderProjects = projectList.map((data, key) => {
         return (
-            <div style={{ border: '2px solid #FFC23C', borderRadius: '25px', padding: '25px', margin: '50px 0px'}}>
+            <div key={key} style={{ border: '2px solid #FFC23C', borderRadius: '25px', padding: '25px', margin: '50px 0px'}}>
                 <Grid container sx={{ textAlign: 'center' }}>
                     <Grid item xs={12}>
                         <h2>{data.name}</h2>

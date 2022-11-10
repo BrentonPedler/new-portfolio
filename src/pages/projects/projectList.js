@@ -14,7 +14,8 @@ export const projectList = [
         repo: 'https://github.com/Smooth-Landing',
         picOne: smoothOne,
         picTwo: smoothTwo,
-        alt: 'Smooth Landing Website Front Page'
+        alt: 'Smooth Landing Website Front Page',
+        key: '0',
     },
     {
         name: 'Daily Metal Motivator',
@@ -24,7 +25,8 @@ export const projectList = [
         repo: 'https://github.com/BrentonPedler/brentonPedlerProjectThree',
         picOne: metalOne,
         picTwo: metalTwo, 
-        alt: 'Daily Metal Motivator Website Front Page'
+        alt: 'Daily Metal Motivator Website Front Page',
+        key: '1',
     },
     {
         name: 'Guess Who Ghibli',
@@ -34,6 +36,7 @@ export const projectList = [
         repo: 'https://github.com/myPetTotoro',
         picOne: guessOne,
         picTwo: guessTwo,
-        alt: 'Guess Who Ghibli Website Front Page'
+        alt: 'Guess Who Ghibli Website Front Page',
+        key: '3'
     }
 ]

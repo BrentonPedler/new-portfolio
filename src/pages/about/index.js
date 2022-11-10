@@ -1,6 +1,5 @@
 import Grid from '@mui/material/Grid';
 import Contact from '../../components/contact';
-import Footer from '../../components/footer';
 
 import Brenton from '../../assets/brentonJuno.png';
 

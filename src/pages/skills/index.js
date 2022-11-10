@@ -9,19 +9,19 @@ export default function Skills() {
                 <Box className={style.main}>
                     <h2>Technical</h2>
                     <Grid container className={style.skillContent} sx={{ width: '100%' }}>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} sm={6} md={12} lg={4} xl={4}>
                             <p>HTML5</p>
                             <p>CSS / SCSS</p>
                             <p>JAVASCRIPT (ES6+)</p>
                             <p>TYPESCRIPT</p>
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                             <p>REACT JS</p>
                             <p>MATERIAL UI</p>
                             <p>STYLED COMPONENTS</p>
                             <p>REDUX</p>
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
                             <p>FIREBASE</p>
                             <p>GIT / GITHUB</p>
                             <p>COMMAND LINE</p>
@@ -29,14 +29,14 @@ export default function Skills() {
                         </Grid>
                     </Grid>
                     <h2>Personal</h2>
-                    <Grid container className={style.skillContent} sx={{ width: '60%' }}>
-                        <Grid item xs={6}>
+                    <Grid container className={style.skillContent} sx={{ width: '60%', minWidth: '300px' }}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <p>Clear Communicater</p>
                             <p>Active Listener</p>
                             <p>Critical Thinker</p>
                             <p>Problem Solver</p>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <p>Time Management</p>
                             <p>Team Player</p>
                             <p>Organized</p>
@@ -44,7 +44,7 @@ export default function Skills() {
                         </Grid>
                     </Grid>
                     <h2>Marketing</h2>
-                    <Grid container className={style.skillContent} sx={{ width: '40%' }}>
+                    <Grid container className={style.skillContent} sx={{ width: '40%', minWidth: '300px' }}>
                         <Grid item xs={12}>
                             <p>Google Analytics</p>
                             <p>Google Tag Manager</p>

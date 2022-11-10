@@ -1,5 +1,6 @@
 import { projectList } from './projectList';
 import Grid from '@mui/material/Grid';
+import { Box } from '@mui/material';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaptopIcon from '@mui/icons-material/Laptop';
@@ -16,11 +17,13 @@ export default function Projects() {
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item xs={4}>
-                        <img src={data.picOne} alt={data.alt} className={style.img} />
-                        <img src={data.picTwo} alt={data.alt} className={style.img} />
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{ textAlign: 'center'}}>
+                            <img src={data.picOne} alt={data.alt} className={style.img} />
+                            <img src={data.picTwo} alt={data.alt} className={style.img} />
                     </Grid>
-                    <Grid item xs={8} className={style.contentContainer}>
+                </Grid>
+                <Grid container>
+                    <Grid item item xs={12} sm={12} md={12} lg={12} xl={12} className={style.contentContainer}>
                         <p>{data.description}</p>
                         <p>{data.tech}</p>
                         <a href={data.repo} target='_blank' rel="noopener noreferrer">

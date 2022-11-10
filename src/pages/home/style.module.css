@@ -17,7 +17,7 @@ h2 {
   background-size: cover;
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 73.5vh;
   margin: 0 auto;
 }
 
@@ -27,7 +27,6 @@ h2 {
   height: fit-content;
   padding-bottom: 33.5px;
   margin-top: 50px;
-  width: 80%;
 }
 
 .buttonContainer {

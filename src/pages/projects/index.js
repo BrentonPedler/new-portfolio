@@ -1,6 +1,5 @@
 import { projectList } from './projectList';
 import Grid from '@mui/material/Grid';
-import { Box } from '@mui/material';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaptopIcon from '@mui/icons-material/Laptop';

@@ -9,7 +9,10 @@ import style from './style.module.css';
 export default function Home({ loadState }) {
     return (
         <div className='fade-in main'>
-            <Box className={style.mainContainer}>
+            <Box 
+                className={style.mainContainer}
+                sx={{ height: { xl: '73.5vh', lg: '73.5vh', md: '73.5vh', sm: '100%', xs: '100%' } }}
+            >
                 <Box 
                     className={style.contentContainer}
                     sx={{

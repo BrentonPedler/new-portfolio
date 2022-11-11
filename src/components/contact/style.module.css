@@ -52,13 +52,22 @@ textarea {
     width: calc(100% - 50px);
 }
 
+button {
+    background: #3F0071;
+    border: none;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    opacity: 0.9;
+    padding: 10px 50px;
+}
+
 .iconContainer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 25px;
     width: 100%;
 }
-
 
 
 

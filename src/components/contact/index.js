@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 
@@ -13,9 +14,14 @@ import Style from './style.module.css';
 
 export default function Contact() {
     const [open, setOpen] = React.useState(false);
+    const [state, handleSubmit] = useForm("xvoydjpw");
 
     const handleOpen = () => { setOpen(true) };
     const handleClose = () => { setOpen(false) };
+
+    if (state.succeeded) {
+        return <p>Thanks for the message!</p>;
+    }
 
     return (
         <div>
@@ -35,13 +41,48 @@ export default function Contact() {
                     sx={{
                         height: { xl: '50%', lg: '50%', md: '70%', sm: '80%', xs: '90%' },
                         width: { xl: '50%', lg: '50%', md: '75%', sm: '90%', xs: '90%' }
-                        }}
+                    }}
                 >
-                    <CloseIcon sx={{ cursor: 'pointer', margin: '10px', fontSize: '30px'}} onClick={handleClose} />
-                    <form>
-                        <input type='text' name='name' placeholder='name' required />
-                        <input type='email' name='email' placeholder='e-mail' required />
-                        <textarea name='message' placeholder='Lets have a chat' rows='5'></textarea>
+                    <CloseIcon sx={{ cursor: 'pointer', margin: '10px', fontSize: '30px' }} onClick={handleClose} />
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            id='name'
+                            type='text'
+                            name='name'
+                            placeholder='name'
+                            required
+                        />
+                        <ValidationError
+                            prefix="Name"
+                            field="name"
+                            errors={state.errors}
+                        />
+                        <input
+                            id='email'
+                            type='email'
+                            name='email'
+                            placeholder='e-mail'
+                            required
+                        />
+                        <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+                        />
+                        <textarea
+                            id='message'
+                            name='message'
+                            placeholder='Lets have a chat'
+                            rows='5'
+                        />
+                        <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+                        />
+                        <button type="submit" disabled={state.submitting}>
+                            Submit
+                        </button>
                     </form>
                     <Box className={Style.iconContainer}>
                         <a href='https://github.com/BrentonPedler' target='_blank' rel="noopener noreferrer">

@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Grid';
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import Contact from '../../components/contact';
 
 import Brenton from '../../assets/brentonJuno.png';
@@ -7,6 +7,8 @@ import Brenton from '../../assets/brentonJuno.png';
 import style from './style.module.css';
 
 export default function About() {
+    const mediaQuery = useMediaQuery('(max-width: 700px)');
+
     return (
         <div className="fade-in" style={{ width: '80%', margin: '0 auto', paddingBottom: '50px' }}>
             <Box>
@@ -15,8 +17,9 @@ export default function About() {
                         item
                         xs={12} sm={12} md={12} lg={10} xl={10}
                         className={style.header}
+                        sx={{ padding: { xl: '25px', lg: '25px', md: '20px', sm: '15px', xs: '10px' } }}
                     >
-                        <h2>
+                        <h2 style={{ fontSize: mediaQuery ? '25px' : '30px' }}>
                             I am a Front End React Developer with diverse expertise in communication, SEO, Content Writing and Google Analytics
                         </h2>
                     </Grid>

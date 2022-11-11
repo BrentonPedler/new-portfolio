@@ -7,7 +7,7 @@ import style from './style.module.css';
 
 
 export default function Home({ loadState }) {
-    const mediaQuery = useMediaQuery('(max-width: 700px)')
+    const mediaQuery = useMediaQuery('(max-width: 700px)');
     return (
         <div className='fade-in main'>
             <Box 

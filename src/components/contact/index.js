@@ -40,7 +40,7 @@ export default function Contact() {
                     className={Style.modalContainer}
                     sx={{
                         height: { xl: '50%', lg: '50%', md: '70%', sm: '80%', xs: '90%' },
-                        width: { xl: '50%', lg: '50%', md: '75%', sm: '90%', xs: '90%' }
+                        width: { xl: '50%', lg: '50%', md: '75%', sm: '80%', xs: '85%' }
                     }}
                 >
                     <CloseIcon sx={{ cursor: 'pointer', margin: '10px', fontSize: '30px' }} onClick={handleClose} />

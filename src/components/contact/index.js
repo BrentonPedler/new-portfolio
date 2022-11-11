@@ -30,8 +30,14 @@ export default function Contact() {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box className={Style.modalContainer}>
-                    <CloseIcon sx={{ cursor: 'pointer', marginLeft: '97%' }} onClick={handleClose} />
+                <Box
+                    className={Style.modalContainer}
+                    sx={{
+                        height: { xl: '50%', lg: '50%', md: '70%', sm: '80%', xs: '90%' },
+                        width: { xl: '50%', lg: '50%', md: '75%', sm: '90%', xs: '90%' }
+                        }}
+                >
+                    <CloseIcon sx={{ cursor: 'pointer', margin: '10px', fontSize: '30px'}} onClick={handleClose} />
                     <form>
                         <input type='text' name='name' placeholder='name' required />
                         <input type='email' name='email' placeholder='e-mail' required />

@@ -39,7 +39,6 @@ input {
     padding: 20px 10px;
     outline: none;
     line-height: 25%;
-    width: calc(50% - 50px);
 }
 
 textarea {

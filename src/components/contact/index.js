@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Modal from '@mui/material/Modal';
-import Box from '@mui/material/Box';
+import { Box, useMediaQuery } from '@mui/material';
 
 import Button from '../../components/button';
 import CloseIcon from '@mui/icons-material/Close';
@@ -13,6 +13,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import Style from './style.module.css';
 
 export default function Contact() {
+    const mediaQuery = useMediaQuery('(max-width: 700px)');
+
     const [open, setOpen] = React.useState(false);
     const [state, handleSubmit] = useForm("xvoydjpw");
 
@@ -39,8 +41,8 @@ export default function Contact() {
                 <Box
                     className={Style.modalContainer}
                     sx={{
-                        height: { xl: '50%', lg: '50%', md: '70%', sm: '80%', xs: '90%' },
-                        width: { xl: '50%', lg: '50%', md: '75%', sm: '80%', xs: '85%' }
+                        height: { xl: '50%', lg: '50%', md: '70%', sm: '80%', xs: '80%' },
+                        width: { xl: '50%', lg: '50%', md: '75%', sm: '80%', xs: '80%' }
                     }}
                 >
                     <CloseIcon sx={{ cursor: 'pointer', margin: '10px', fontSize: '30px' }} onClick={handleClose} />
@@ -50,6 +52,7 @@ export default function Contact() {
                             type='text'
                             name='name'
                             placeholder='name'
+                            style={{ width: mediaQuery ? 'calc(100% - 50px)' : 'calc(50% - 50px)'  }}
                             required
                         />
                         <ValidationError
@@ -62,6 +65,7 @@ export default function Contact() {
                             type='email'
                             name='email'
                             placeholder='e-mail'
+                            style={{ width: mediaQuery ? 'calc(100% - 50px)' : 'calc(50% - 50px)'  }}
                             required
                         />
                         <ValidationError

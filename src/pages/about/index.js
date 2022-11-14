@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid';
 import { Box, useMediaQuery } from '@mui/material';
 import Contact from '../../components/contact';
+import Scroll from '../../components/scroll';
 
 import Brenton from '../../assets/brentonJuno.png';
 
@@ -10,7 +11,7 @@ export default function About() {
     const mediaQuery = useMediaQuery('(max-width: 700px)');
 
     return (
-        <div className="fade-in" style={{ width: '80%', margin: '0 auto', paddingBottom: '50px' }}>
+        <div className="fade-in" style={{ width: '80%', margin: '0 auto', padding: '50px 0px' }}>
             <Box>
                 <Grid container>
                     <Grid
@@ -48,6 +49,7 @@ export default function About() {
                     </Grid>
                 </Grid>
             </Box>
+            <Scroll />
         </div>
     )
 }

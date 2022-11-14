@@ -1,5 +1,6 @@
 import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import Scroll from '../../components/scroll';
 import style from './style.module.css';
 
 export default function Skills() {
@@ -53,6 +54,7 @@ export default function Skills() {
                         </Grid>
                     </Grid>
                 </Box>
+            <Scroll />
             </div>
         </div>
     )

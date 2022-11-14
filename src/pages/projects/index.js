@@ -1,6 +1,7 @@
 import { projectList } from './projectList';
 import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import Scroll from '../../components/scroll';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaptopIcon from '@mui/icons-material/Laptop';
@@ -62,6 +63,7 @@ export default function Projects() {
                 <Grid item xs={12}>
                     {renderProjects}
                 </Grid>
+                <Scroll />
             </Grid>
         </div>
     )

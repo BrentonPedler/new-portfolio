@@ -1,0 +1,7 @@
+[build]
+  command = "CI= yarn build"
+  publish = "build"
+
+ [[redirects]]
+  from = "https://brentoncodes.com"
+  to = "https://www.brentoncodes.com"

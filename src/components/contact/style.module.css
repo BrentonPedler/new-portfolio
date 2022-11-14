@@ -55,6 +55,7 @@ button {
     background: #3F0071;
     border: none;
     color: #fff;
+    cursor: pointer;
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
     opacity: 0.9;

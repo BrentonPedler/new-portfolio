@@ -22,7 +22,7 @@ export default function Contact() {
     const handleClose = () => { setOpen(false) };
 
     if (state.succeeded) {
-        return <p>Thanks for the message!</p>;
+        <p>Thank you for your interest!</p>;
     }
 
     return (
@@ -52,7 +52,7 @@ export default function Contact() {
                             type='text'
                             name='name'
                             placeholder='name'
-                            style={{ width: mediaQuery ? 'calc(100% - 50px)' : 'calc(50% - 50px)'  }}
+                            style={{ width: mediaQuery ? 'calc(100% - 50px)' : 'calc(50% - 50px)' }}
                             required
                         />
                         <ValidationError
@@ -65,7 +65,7 @@ export default function Contact() {
                             type='email'
                             name='email'
                             placeholder='e-mail'
-                            style={{ width: mediaQuery ? 'calc(100% - 50px)' : 'calc(50% - 50px)'  }}
+                            style={{ width: mediaQuery ? 'calc(100% - 50px)' : 'calc(50% - 50px)' }}
                             required
                         />
                         <ValidationError
@@ -88,6 +88,11 @@ export default function Contact() {
                             Submit
                         </button>
                     </form>
+                    {
+                        state.succeeded ? 
+                            <p style={{ textAlign: 'center' }}>Thank you for your interest!</p> : ''
+                
+                    }
                     <Box className={Style.iconContainer}>
                         <a href='https://github.com/BrentonPedler' target='_blank' rel="noopener noreferrer">
                             <GitHubIcon style={{ fontSize: '40px', color: '#FFC23C' }} />

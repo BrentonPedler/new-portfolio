@@ -21,10 +21,6 @@ export default function Contact() {
     const handleOpen = () => { setOpen(true) };
     const handleClose = () => { setOpen(false) };
 
-    if (state.succeeded) {
-        <p>Thank you for your interest!</p>;
-    }
-
     return (
         <div>
             <Button

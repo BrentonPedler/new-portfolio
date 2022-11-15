@@ -91,16 +91,16 @@ export default function Contact() {
                     }
                     <Box className={Style.iconContainer}>
                         <a href='https://github.com/BrentonPedler' target='_blank' rel="noopener noreferrer">
-                            <GitHubIcon style={{ fontSize: '30px', color: '#FFC23C' }} />
+                            <GitHubIcon style={{ fontSize: mediaQuery ? '30px' : '50px', color: '#FFC23C' }} />
                         </a>
                         <a href='https://www.linkedin.com/in/brentonjamespedler/' target='_blank' rel="noopener noreferrer">
-                            <LinkedInIcon style={{ fontSize: '30px', color: '#FFC23C' }} />
+                            <LinkedInIcon style={{ fontSize: mediaQuery ? '30px' : '50px', color: '#FFC23C' }} />
                         </a>
                         <a href='https://twitter.com/PedlerCodes' target='_blank' rel="noopener noreferrer">
-                            <TwitterIcon style={{ fontSize: '30px', color: '#FFC23C' }} />
+                            <TwitterIcon style={{ fontSize: mediaQuery ? '30px' : '50px', color: '#FFC23C' }} />
                         </a>
                         <a href='mailto:brentonjamespedler@gmail.com' target='_blank' rel="noopener noreferrer">
-                            <EmailIcon style={{ fontSize: '30px', color: '#FFC23C' }} />
+                            <EmailIcon style={{ fontSize: mediaQuery ? '30px' : '50px', color: '#FFC23C' }} />
                         </a>
                     </Box>
                 </Box>

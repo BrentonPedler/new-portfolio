@@ -2,6 +2,7 @@ import { projectList } from './projectList';
 import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Scroll from '../../components/scroll';
+import Footer from '../../components/footer';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaptopIcon from '@mui/icons-material/Laptop';
@@ -58,12 +59,14 @@ export default function Projects() {
         <div className={style.mainContainer}>
             <Grid 
                 container
+                justifyContent="center"
                 sx={{ width: { xl: '80%', lg: '80%', md: '80%', sm: '90%', xs: '95%' } }}
             >
                 <Grid item xs={12}>
                     {renderProjects}
                 </Grid>
                 <Scroll />
+                <Footer />
             </Grid>
         </div>
     )

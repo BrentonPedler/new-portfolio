@@ -47,6 +47,7 @@ export default function Home({ loadState }) {
                             to='/about'
                             onClick={!loadState}
                             style={{ padding: '0' }}
+                            underline='none'
                         >
                             <Button text='My story' sx={{ padding: '10px 50px' }} />
                         </Link>

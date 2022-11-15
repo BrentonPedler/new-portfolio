@@ -19,7 +19,7 @@ export const projectList = [
     },
     {
         name: 'Daily Metal Motivator',
-        description: 'An aplication built for heavy metal enthusiasts looking for motivation. Select your mood & a heavy metal lyric will be generated at random.',
+        description: 'An application built for heavy metal enthusiasts looking for motivation. Select your mood & a heavy metal lyric will be generated at random.',
         tech: 'Built with React JS & Firebase.',
         live: 'https://vigilant-aryabhata-796d9b.netlify.app/',
         repo: 'https://github.com/BrentonPedler/brentonPedlerProjectThree',
@@ -30,7 +30,7 @@ export const projectList = [
     },
     {
         name: 'Guess Who Ghibli',
-        description: 'An application inspired by the 80s board game Guess Who? Users are prompted to guess randomly generated characters from the Studio Ghibli API. Built in collaboration with good friend Adrienne Lee.',
+        description: 'An application inspired by the 80s board game Guess Who. Users are prompted to guess randomly generated characters from the Studio Ghibli API. Designed and built in collaboration with good friend Adrienne Lee.',
         tech: 'Built with HTML5, CSS & JavaScript.',
         live: 'https://mypettotoro.github.io/myPetTotoro/',
         repo: 'https://github.com/myPetTotoro',

@@ -56,7 +56,7 @@ export default function Skills() {
                         </Grid>
                     </Grid>
                 </Box>
-            <Scroll style={{ marginBottom: '50px' }} />
+            <Scroll />
             <Footer />
             </div>
         </div>

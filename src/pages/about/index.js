@@ -26,7 +26,7 @@ export default function About() {
                         sx={{ padding: { xl: '25px', lg: '25px', md: '20px', sm: '15px', xs: '10px' }, marginBottom: '100px'  }}
                     >
                         <h2 style={{ fontSize: mediaQuery ? '25px' : '30px' }}>
-                            I am a Front End React Developer with diverse expertise in communication, SEO, Content Writing and Google Analytics
+                            I am a Front End React Developer with diverse expertise in communication, SEO, Content Writing and Google Analytics.
                         </h2>
                     </Grid>
                 </Grid>
@@ -34,27 +34,28 @@ export default function About() {
                     container
                     justifyContent="center"
                     alignItems="center"
-                    sx={{ marginTop: '100px' }}
+                    sx={{ margin: '100px 0px' }}
                 >
                     <Grid
                         item
                         xs={12} sm={12} md={12} lg={6} xl={6}
                         sx={{ textAlign: 'center' }}
                     >
-                        <img src={Brenton} alt='Brenton graduate of Juno Web Development posing for photo' />
+                        <img src={Brenton} alt='Brenton graduate of Juno Web Development posing' />
                     </Grid>
                     <Grid
                         item
                         xs={12} sm={12} md={12} lg={6} xl={6}
                         sx={{ textAlign: 'right' }}
                     >
-                        <p>I am a Juno immersive bootcamp graduate curently employed at NuCode Technologies, an end-to-end software development consultancy firm for businesses seeking solutions in staking platforms, Web 3.0, fintech, blockchain and Smart Contract development.</p>
-                        <p style={{ marginBottom: '50px' }}>I have worked on numerous projects using React JS, TypeScript, Material UI, Styled Components & Redux. I have also gained a tremendous amount of experience in Agile project management, Search engine optimization and content writing.</p>
+                        <p>I am a Juno immersive bootcamp graduate currently employed at NuCode Technologies, an end-to-end software development consultancy firm for businesses seeking solutions in staking platforms, Web 3.0, fintech, blockchain and Smart Contract development.</p>
+                        <p>I have worked on numerous projects using React JS, TypeScript, Material UI, Styled Components & Redux. I have also gained a tremendous amount of experience in Agile project management, Search engine optimization and content writing.</p>
+                        <p style={{ marginBottom: '50px' }}>In addition to my professional experience I am also a student mentor at Juno College where I get the satisfaction of providing support and technical knowledge to students currently enrolled in the Web Development bootcamp.</p>
                         <Contact />
                     </Grid>
                 </Grid>
             </Box>
-            <Scroll style={{ marginBottom: '50px' }} />
+            <Scroll />
             <Footer />
         </div>
     )

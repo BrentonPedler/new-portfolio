@@ -14,7 +14,7 @@ export default function Skills() {
                     <Grid container className={style.skillContent} sx={{ width: '100%' }}>
                         <Grid item xs={12} sm={6} md={12} lg={4} xl={4}>
                             <p>Html5</p>
-                            <p>Css / Scss</p>
+                            <p>CSS / SCSS</p>
                             <p>JavaScript (ES6+)</p>
                             <p>TypeScript</p>
                         </Grid>

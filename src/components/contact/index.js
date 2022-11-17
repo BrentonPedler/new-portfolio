@@ -37,7 +37,7 @@ export default function Contact() {
                 <Box
                     className={Style.modalContainer}
                     sx={{
-                        height: { xl: '50%', lg: '50%', md: '70%', sm: '80%', xs: '80%' },
+                        height: { xl: '60%', lg: '60%', md: '70%', sm: '80%', xs: '80%' },
                         width: { xl: '50%', lg: '50%', md: '75%', sm: '80%', xs: '80%' }
                     }}
                 >

@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Box, useMediaQuery } from '@mui/material';
+
 import Button from '../../components/button';
 import Contact from '../../components/contact';
 import Footer from '../../components/footer';
+
 import style from './style.module.css';
 
 
@@ -49,7 +51,10 @@ export default function Home({ loadState }) {
                             style={{ padding: '0' }}
                             underline='none'
                         >
-                            <Button text='My story' sx={{ padding: '10px 50px' }} />
+                            <Button 
+                                text='My story' 
+                                sx={{ padding: '10px 50px' }} 
+                            />
                         </Link>
                         <Contact />
                     </Box>
